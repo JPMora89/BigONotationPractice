@@ -130,7 +130,8 @@ function sortedFrequency(array, number) {
 // We enter a while loop that continues as long as the left pointer is less than or equal to the right pointer. This condition ensures that the search range is valid and hasn't been exhausted.
 // Inside the loop, we calculate the middle index by finding the average of the left and right pointers using (left + right) / 2. The Math.floor function is used to round the result down to the nearest whole number.
 // We check if the middle element (array[middle]) is equal to the target number. If it is, we found the target number at the middle index, so we return the middle index.
-// If the middle element is greater than or equal to the leftmost element (array[left]), we know that the left half of the array is sorted. We can then check if the target number is within the range of the left half. If it is, we update the right pointer (right) to middle - 1 to search in the left half. Otherwise, we update the left pointer (left) to middle + 1 to search in the right half.
+// If the middle element is greater than or equal to the leftmost element (array[left]), we know that the left half of the array is sorted. We can then check if the target number is within the range of the left half. 
+// If it is, we update the right pointer (right) to middle - 1 to search in the left half. Otherwise, we update the left pointer (left) to middle + 1 to search in the right half.
 // If the middle element is less than or equal to the rightmost element (array[right]), we know that the right half of the array is sorted
 
 
@@ -168,7 +169,8 @@ function findRotatedIndex(array, number){
 
 //   findRotationCount
 
-//   Write a function called findRotationCount which accepts an array of distinct numbers sorted in increasing order. The array has been rotated counter-clockwise n number of times. Given such an array, find the value of n.
+//   Write a function called findRotationCount which accepts an array of distinct numbers sorted in increasing order. The array has been rotated counter-clockwise n number of times. Given such an array, 
+// find the value of n.
   
 //   Constraints:
   
@@ -210,7 +212,7 @@ function findRotationCount(array) {
     }
 
   }
-
+ 
   
 // findFloor
 
